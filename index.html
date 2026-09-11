@@ -37,79 +37,37 @@
 
 <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 710 110">
 
-  <!-- F  (slot 10–110) -->
-  <rect x="10"  y="0" width="10"  height="100" fill="#ffffff"/>
-  <rect x="10"  y="0" width="100" height="10"  fill="#ffffff"/>
-  <rect x="10"  y="45" width="100" height="10" fill="#ffffff"/>
+  <!-- F1  (slot 0–100) -->
+  <rect x="0"   y="0"  width="10"  height="100" fill="#ffffff"/>
+  <rect x="0"   y="0"  width="100" height="10"  fill="#ffffff"/>
+  <rect x="0"   y="45" width="100" height="10"  fill="#ffffff"/>
 
-  <!-- F  (slot 130–230) -->
-  <rect x="130" y="0" width="10"  height="100" fill="#ffffff"/>
-  <rect x="130" y="0" width="100" height="10"  fill="#ffffff"/>
-  <rect x="130" y="45" width="100" height="10" fill="#ffffff"/>
+  <!-- F2  (slot 120–220) -->
+  <rect x="120" y="0"  width="10"  height="100" fill="#ffffff"/>
+  <rect x="120" y="0"  width="100" height="10"  fill="#ffffff"/>
+  <rect x="120" y="45" width="100" height="10"  fill="#ffffff"/>
 
-  <!-- O  (slot 250–350) – kruh vepsaný do čtverce -->
-  <circle cx="300" cy="50" r="45" fill="none" stroke="#e10600" stroke-width="10"/>
+  <!-- O1  (slot 240–340) – kruh vepsaný do čtverce, vnější r = 50 -->
+  <circle cx="290" cy="50" r="45" fill="none" stroke="#e10600" stroke-width="10"/>
 
-  <!-- O  (slot 370–470) -->
-  <circle cx="420" cy="50" r="45" fill="none" stroke="#e10600" stroke-width="10"/>
+  <!-- O2  (slot 360–460) -->
+  <circle cx="410" cy="50" r="45" fill="none" stroke="#e10600" stroke-width="10"/>
 
-  <!-- D  (slot 490–590) – svislice + půlkruh, ve slotu vycentrováno -->
-  <rect x="510" y="0" width="10" height="100" fill="#ffffff"/>
-  <path d="M 520 0 A 50 50 0 0 1 520 100 L 520 90 A 40 40 0 0 0 520 10 Z" fill="#ffffff"/>
+  <!-- D1  (slot 480–580) – svislice vlevo + půlkružnice přes celý čtverec -->
+  <path fill-rule="evenodd" fill="#ffffff" d="
+    M 480 0  L 530 0  A 50 50 0 0 1 530 100  L 480 100  Z
+    M 490 10 L 530 10 A 40 40 0 0 1 530 90   L 490 90   Z
+  "/>
 
-  <!-- D  (slot 610–710) -->
-  <rect x="630" y="0" width="10" height="100" fill="#ffffff"/>
-  <path d="M 640 0 A 50 50 0 0 1 640 100 L 640 90 A 40 40 0 0 0 640 10 Z" fill="#ffffff"/>
+  <!-- D2  (slot 600–700) -->
+  <path fill-rule="evenodd" fill="#ffffff" d="
+    M 600 0  L 650 0  A 50 50 0 0 1 650 100  L 600 100  Z
+    M 610 10 L 650 10 A 40 40 0 0 1 650 90   L 610 90   Z
+  "/>
 
 </svg>
 
 <p class="coming">Coming soon</p>
-
-</body>
-</html>
-<!-- Vektorový nápis FFOODD -->
-<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 150">
-  <!-- F -->
-  <path d="M43 120 V30 H133 V52 H65 V70 H113 V92 H65 V120 Z" fill="#ffffff"/>
-  <!-- F -->
-  <path d="M148 120 V30 H238 V52 H170 V70 H218 V92 H170 V120 Z" fill="#ffffff"/>
-  <!-- O -->
-  <circle cx="298" cy="75" r="34" fill="none" stroke="#e10600" stroke-width="22"/>
-  <!-- O -->
-  <circle cx="403" cy="75" r="34" fill="none" stroke="#e10600" stroke-width="22"/>
-  <!-- D -->
-  <path d="M463 30 H507 A45 45 0 0 1 507 120 H463 Z" fill="#ffffff"/>
-  <!-- D -->
-  <path d="M568 30 H612 A45 45 0 0 1 612 120 H568 Z" fill="#ffffff"/>
-</svg>
-
-<p class="coming">Coming soon</p>
-
-</body>
-</html>    font-size: clamp(48px, 12vw, 140px);
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    line-height: 1;
-    margin-bottom: 0.4em;
-  }
-
-  h1 .red {
-    color: #e10600;
-  }
-
-  .coming {
-    font-size: clamp(12px, 1.6vw, 16px);
-    font-weight: 300;
-    letter-spacing: 0.5em;
-    text-transform: uppercase;
-    color: #888;
-  }
-</style>
-</head>
-<body>
-
-  <h1>FF<span class="red">OO</span>DD</h1>
-  <p class="coming">Coming soon</p>
 
 </body>
 </html>
