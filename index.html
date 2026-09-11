@@ -4,37 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FFOODD – Coming soon</title>
-
-<!-- Geometrický font Poppins z Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html, body {
-    height: 100%;
-  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
 
   body {
-    background-color: #000;
-    color: #fff;
+    background: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
     padding: 20px;
+    font-family: Arial, sans-serif;
   }
 
-  h1 {
-    font-size: clamp(48px, 12vw, 140px);
+  .logo {
+    width: clamp(280px, 80vw, 700px);
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .coming {
+    color: #888;
+    font-size: clamp(12px, 1.6vw, 16px);
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+</style>
+</head>
+<body>
+
+<!-- Vektorový nápis FFOODD -->
+<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 150">
+  <!-- F -->
+  <path d="M43 120 V30 H133 V52 H65 V70 H113 V92 H65 V120 Z" fill="#ffffff"/>
+  <!-- F -->
+  <path d="M148 120 V30 H238 V52 H170 V70 H218 V92 H170 V120 Z" fill="#ffffff"/>
+  <!-- O -->
+  <circle cx="298" cy="75" r="34" fill="none" stroke="#e10600" stroke-width="22"/>
+  <!-- O -->
+  <circle cx="403" cy="75" r="34" fill="none" stroke="#e10600" stroke-width="22"/>
+  <!-- D -->
+  <path d="M463 30 H507 A45 45 0 0 1 507 120 H463 Z" fill="#ffffff"/>
+  <!-- D -->
+  <path d="M568 30 H612 A45 45 0 0 1 612 120 H568 Z" fill="#ffffff"/>
+</svg>
+
+<p class="coming">Coming soon</p>
+
+</body>
+</html>    font-size: clamp(48px, 12vw, 140px);
     font-weight: 400;
     letter-spacing: 0.08em;
     line-height: 1;
